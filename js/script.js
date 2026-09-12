@@ -3,6 +3,7 @@ const formStatus = document.querySelector("#form-status");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 const themeToggle = document.querySelector("#theme-toggle");
+const backToTop = document.querySelector(".back-to-top");
 
 const fields = {
     name: {
@@ -134,5 +135,20 @@ if (themeToggle) {
 
     themeToggle.addEventListener("click", () => {
         setTheme(!document.body.classList.contains("dark-theme"));
+    });
+}
+
+if (backToTop) {
+    function updateBackToTopVisibility() {
+        const isVisible = window.scrollY > 400;
+        backToTop.classList.toggle("is-visible", isVisible);
+        backToTop.setAttribute("aria-hidden", String(!isVisible));
+    }
+
+    window.addEventListener("scroll", updateBackToTopVisibility, { passive: true });
+    updateBackToTopVisibility();
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 }

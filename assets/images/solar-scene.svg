@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Painéis solares sob um céu ensolarado</title>
+  <desc id="desc">Ilustração de painéis solares instalados em um telhado ao entardecer.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c684b"/>
+      <stop offset=".55" stop-color="#75b46b"/>
+      <stop offset="1" stop-color="#f4c85e"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#173c32"/><stop offset="1" stop-color="#0d281f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#276c79"/><stop offset="1" stop-color="#0d3445"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="905" cy="170" r="82" fill="#ffe490" opacity=".95"/>
+  <circle cx="905" cy="170" r="122" fill="#ffe490" opacity=".17"/>
+  <path d="M0 470C160 400 270 480 420 420s275-12 394-69c146-66 253 3 386-61v510H0Z" fill="#4a8451" opacity=".7"/>
+  <path d="M0 565 485 365l715 236v199H0Z" fill="url(#roof)"/>
+  <path d="m100 574 521-173 448 133-527 185Z" fill="url(#panel)" stroke="#9bc5c2" stroke-width="8"/>
+  <g stroke="#94c8ca" stroke-width="5" opacity=".9">
+    <path d="m216 535 530 150M337 494l530 150M458 453l530 150M579 413l490 139"/>
+    <path d="m254 625 123-172M379 669l126-174M505 711l127-175M632 680l128-177M759 635l127-176M886 591l125-174"/>
+  </g>
+  <path d="M0 708c207-60 322 72 521 4s327 61 679-24v112H0Z" fill="#173d2d"/>
+</svg>
